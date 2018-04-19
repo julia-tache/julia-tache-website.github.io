@@ -4,42 +4,26 @@ header{
 	margin: 10px;
 	font-family: "Courier New";
 	font-style: italic;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 body {
 	background-color: #8DAD9D; 
 }
 
-
-.bio {
-	text-align: center;
-	font-family: "Courier New";
-	display: block;
-	float: right;
-}
-
-.bg-image{
-  background-image: url("file:///Users/JuliaTache/Desktop/Junior%20Year/Spring%202018/ADDA%20HTML:CSS/Final%20Project/02737b5f375a7050cbda35fda428e306.png");
-  height: 100vh; 
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-
-}
-
 .menu {
-  padding: 30px;
-  margin: 10px;
+  display: flex; 
+  justify-content: space-around;
+  align-items: center; 
+  padding: 10px;
+  text-align: center;
   list-style: none;
   font-size: 30px; 
-  line-height: 75px;
+  line-height: 60px;
   font-family: "Courier New";
   border-radius: 20px; 
-  padding: 10px;
   margin: 10px;
   background-color: white;
-  float: left; 
 }
 
 .menu a {
@@ -52,6 +36,15 @@ body {
   color: white; 
 }
 
+.bg-image{
+  background-image: url("file:///Users/JuliaTache/Desktop/Junior%20Year/Spring%202018/ADDA%20HTML:CSS/julia-tache.github.io/02737b5f375a7050cbda35fda428e306.png");
+  height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
 .contact {
   padding: 0;
   margin: 0;
@@ -60,17 +53,18 @@ body {
 }
 
 ul {
-	text-align: center;
+  text-align: center;
 }
 
 .contact li {
-	margin: 10px;
+  display: flex;
+  margin: 10px;
 	text-align: center;
 	display: inline-block;
 	justify-content: space-around; 
 	background-color: pink;
-	width: 100px;
-	margin-top: 300px;
+	width: 150px;
+	margin-top: 50px;
 }
 
 .contact li a {
@@ -84,3 +78,29 @@ ul {
     color: pink;
     background-color: tan;
 }
+
+@keyframes slidein {
+    from {background-color: pink;}
+    to {background-color: tan;}
+}
+
+.box{
+  float: center;
+  border-radius: 20px; 
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  font-family: "Courier New";
+  width: 500px;
+  margin-top: 10px;
+  margin-left: 265px;
+  font-size: 20px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+.one {
+  background-color: tan;
+
+
+
